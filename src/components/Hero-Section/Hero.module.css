@@ -1,0 +1,29 @@
+
+  .typewriterText {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 30px ;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+     /* Ensure the text and cursor stay on the same line */
+  }
+  
+  .cursor {
+    display: inline-block;
+    width: 4px;
+    height: 20px;
+    background-color: white; /* Change cursor color to white */
+    margin-left: 5px; /* Adjust margin between text and cursor as needed */
+    animation: blink-caret 0.75s infinite;
+  }
+  
+  @keyframes blink-caret {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
